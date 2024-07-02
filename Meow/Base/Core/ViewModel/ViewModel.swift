@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import Combine
+
+protocol ViewModel: ObservableObject where ObjectWillChangePublisher.Output == Void {
+    associatedtype State
+    associatedtype Input
+
+    var state: State { get set }
+    func trigger(_ input: Input)
+}

@@ -60,3 +60,14 @@ func greet1(person: [String: String]) {
     print("weather is nice in \(location).")
 }
 
+struct Person {
+    var name: String
+    var age: Int
+}
+
+func main(){
+    let person = Person(name: "Alice", age: 30)
+    let a = person.name
+    let nameKeyPath = \Person.name
+    print(person[keyPath: nameKeyPath]) // 输出: Alice
+}

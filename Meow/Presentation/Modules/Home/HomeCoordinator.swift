@@ -6,3 +6,27 @@
 //
 
 import Foundation
+import Stinsen
+import SwiftUI
+
+final class HomeCoordinator: NavigationCoordinatable {
+    let stack = Stinsen.NavigationStack<HomeCoordinator>(initial: \HomeCoordinator.home)
+
+    @Root
+    var home = makeHomePage
+    
+    @Route(.push)
+    var detail = makeHomePagePromptDetail
+    
+}
+
+extension HomeCoordinator {
+    func makeHomePage() -> HomeScreen {
+        HomeScreen(viewModel: AnyViewModel(HomeViewModel()))
+    }
+    
+    func makeHomePagePromptDetail(_ article: Article) -> PromptsDetailScreen {
+        EverythingDetailScreen(viewModel: AnyViewModel(PromptsDetailViewModel(article: article)))
+    }
+}
+

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import Alamofire
 
 @main
 struct MeowApp: App {
@@ -25,7 +26,8 @@ struct MeowApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            AppCoordinator().view()
         }
         .modelContainer(sharedModelContainer)
     }
