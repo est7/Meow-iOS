@@ -1,0 +1,62 @@
+//
+//  File.swift
+//  Meow
+//
+//  Created by 李苹果 on 2024/7/2.
+//
+
+import Foundation
+
+protocol Nameable {
+    func name() -> String
+}
+
+func f<T: Nameable>(x: T) {
+    print("Name is " + x.name())
+}
+
+
+class StepCounter {
+    var totalSteps: Int = 0 {
+        willSet(newTotalSteps) {
+            print("About to set totalSteps to \(newTotalSteps)")
+        }
+        didSet {
+            if totalSteps > oldValue  {
+                print("Added \(totalSteps - oldValue) steps")
+            }
+        }
+    }
+}
+
+
+func greet(person: [String: String]) {
+    if let name = person["name"] {
+        print("Hello \(name)")
+        
+        if let location = person["location"] {
+            print("weather is nice in \(location).")
+        } else {
+            print("weather is nice near you.")
+        }
+    } else {
+        print("Hello stranger")
+    }
+}
+
+func greet1(person: [String: String]) {
+    guard let name = person["name"] else {
+        print("Hello stranger")
+        return
+    }
+    
+    print("Hello \(name)")
+    
+    guard let location = person["location"] else {
+        print("weather is nice near you.")
+        return
+    }
+    
+    print("weather is nice in \(location).")
+}
+

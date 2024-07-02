@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import Kingfisher
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
@@ -35,7 +36,23 @@ struct ContentView: View {
                 }
             }
         } detail: {
-            Text("Select an item")
+            ContentTextView()
+        }
+    }
+    
+    
+    struct ContentTextView: View {
+        var body: some View {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+            }
+            .padding()
+            .onAppear {
+                       print(KingfisherManager.shared)
+                   }
         }
     }
 
