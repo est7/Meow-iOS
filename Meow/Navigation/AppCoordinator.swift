@@ -10,21 +10,28 @@ import Stinsen
 import SwiftUI
 
 final class AppCoordinator:TabCoordinatable{
-    var child: Stinsen.TabChild = TabChild(startingItems: [
-        
-    ])
+    var child: Stinsen.TabChild = TabChild(
+        startingItems: [
+            \AppCoordinator.homePage,
+             \AppCoordinator.chatPage,
+             \AppCoordinator.profilePage,
+        ])
     
     @Route(tabItem:makeHomeTabItem)
     var homePage = makeHomeCoordinator
+
     @Route(tabItem:makeChatTabItem)
     var chatPage = makeChatCoordinator
+
     @Route(tabItem:makeProfileTabItem)
     var profilePage = makeProfileCoordinator
 
-    var searchPage = makeSearchCoordinator
-    var settingPage = makeSettingCoordinator
-    var splashPage = makeSplashCoordinator
-    var loginPage = makeLoginCoordinator
+    //    var searchPage = makeSearchCoordinator
+
+    //    var settingPage = makeSettingCoordinator
+
+    //    var splashPage = makeSplashCoordinator
+    //    var loginPage = makeLoginCoordinator
 
     @ViewBuilder
     func makeHomeTabItem(isActive: Bool) -> some View {
@@ -44,26 +51,26 @@ final class AppCoordinator:TabCoordinatable{
 
 extension AppCoordinator {
     func makeHomeCoordinator() -> NavigationViewCoordinator<HomeCoordinator> {
-        .init(HomeCoordinator)
+        .init(HomeCoordinator())
     }
     func makeChatCoordinator() -> NavigationViewCoordinator<ChatCoordinator> {
-        .init(ChatCoordinator)
-    }
-    func makeSearchCoordinator() -> NavigationViewCoordinator<SearchCoordinator> {
-        .init(SearchCoordinator)
-    }
-    func makeSettingCoordinator() -> NavigationViewCoordinator<SettingCoordinator> {
-        .init(SettingCoordinator)
+        .init(ChatCoordinator())
     }
     func makeProfileCoordinator() -> NavigationViewCoordinator<ProfileCoordinator> {
-        .init(ProfileCoordinator)
-    }
-    func makeSplashCoordinator() -> NavigationViewCoordinator<SplashCoordinator> {
-        .init(SplashCoordinator)
+        .init(ProfileCoordinator())
     }
 
-    func makeLoginCoordinator() -> NavigationViewCoordinator<LoginCoordinator> {
-        .init(LoginCoordinator)
-    }
-
+    //    func makeSearchCoordinator() -> NavigationViewCoordinator<SearchCoordinator> {
+    //        .init(SearchCoordinator)
+    //    }
+    //    func makeSettingCoordinator() -> NavigationViewCoordinator<SettingCoordinator> {
+    //        .init(SettingCoordinator)
+    //    }
+    //    func makeSplashCoordinator() -> NavigationViewCoordinator<SplashCoordinator> {
+    //        .init(SplashCoordinator)
+    //    }
+    //
+    //    func makeLoginCoordinator() -> NavigationViewCoordinator<LoginCoordinator> {
+    //        .init(LoginCoordinator)
+    //    }
 }

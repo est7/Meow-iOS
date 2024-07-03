@@ -15,6 +15,12 @@
 		84139B782C32900F00DBFD6F /* MeowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84139B772C32900F00DBFD6F /* MeowTests.swift */; };
 		84139B822C32900F00DBFD6F /* MeowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84139B812C32900F00DBFD6F /* MeowUITests.swift */; };
 		84139B842C32900F00DBFD6F /* MeowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84139B832C32900F00DBFD6F /* MeowUITestsLaunchTests.swift */; };
+		841506A72C3520530026E778 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506A62C3520530026E778 /* Article.swift */; };
+		841506A92C35347C0026E778 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506A82C35347C0026E778 /* HomeCoordinator.swift */; };
+		841506AC2C35361B0026E778 /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506AA2C35361B0026E778 /* ChatCoordinator.swift */; };
+		841506AD2C35361B0026E778 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506AB2C35361B0026E778 /* ProfileCoordinator.swift */; };
+		841506AF2C3551420026E778 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506AE2C3551420026E778 /* ChatScreen.swift */; };
+		841506B12C3551920026E778 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506B02C3551920026E778 /* ProfileScreen.swift */; };
 		84D05AD42C33AAD30054D791 /* PlaygroundCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05AD32C33AAD30054D791 /* PlaygroundCode.swift */; };
 		84D05AE42C33D6680054D791 /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 84D05AE32C33D6680054D791 /* CombineExt */; };
 		84D05AE62C33D6680054D791 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 84D05AE52C33D6680054D791 /* Factory */; };
@@ -27,9 +33,6 @@
 		84D05AFD2C33D9350054D791 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 84D05AFC2C33D9350054D791 /* RxMoya */; };
 		84D05B122C33E5CC0054D791 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84D05B112C33E5CC0054D791 /* Alamofire */; };
 		84D05B232C33F9A50054D791 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05B222C33F9A50054D791 /* AppCoordinator.swift */; };
-		84D05B452C3400900054D791 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05B442C3400900054D791 /* HomeCoordinator.swift */; };
-		84D05B472C3400A40054D791 /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05B462C3400A40054D791 /* ChatCoordinator.swift */; };
-		84D05B492C3400B50054D791 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05B482C3400B50054D791 /* ProfileCoordinator.swift */; };
 		84D05B4B2C3400C70054D791 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05B4A2C3400C70054D791 /* SettingsCoordinator.swift */; };
 		84D05B4D2C3400D10054D791 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05B4C2C3400D10054D791 /* SplashCoordinator.swift */; };
 		84D05B4F2C3400DB0054D791 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05B4E2C3400DB0054D791 /* SearchCoordinator.swift */; };
@@ -85,11 +88,14 @@
 		84139B7D2C32900F00DBFD6F /* MeowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84139B812C32900F00DBFD6F /* MeowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowUITests.swift; sourceTree = "<group>"; };
 		84139B832C32900F00DBFD6F /* MeowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		841506A62C3520530026E778 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		841506A82C35347C0026E778 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		841506AA2C35361B0026E778 /* ChatCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCoordinator.swift; sourceTree = "<group>"; };
+		841506AB2C35361B0026E778 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		841506AE2C3551420026E778 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		841506B02C3551920026E778 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		84D05AD32C33AAD30054D791 /* PlaygroundCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundCode.swift; sourceTree = "<group>"; };
 		84D05B222C33F9A50054D791 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		84D05B442C3400900054D791 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		84D05B462C3400A40054D791 /* ChatCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCoordinator.swift; sourceTree = "<group>"; };
-		84D05B482C3400B50054D791 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		84D05B4A2C3400C70054D791 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		84D05B4C2C3400D10054D791 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		84D05B4E2C3400DB0054D791 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
@@ -332,6 +338,7 @@
 		84D05B2D2C33FE4F0054D791 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				841506A62C3520530026E778 /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -373,7 +380,6 @@
 			isa = PBXGroup;
 			children = (
 				84D05B432C34003C0054D791 /* Screens */,
-				84D05B502C3400E30054D791 /* LoginCoordinator.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -382,7 +388,6 @@
 			isa = PBXGroup;
 			children = (
 				84D05B422C3400360054D791 /* Screens */,
-				84D05B4E2C3400DB0054D791 /* SearchCoordinator.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -391,7 +396,6 @@
 			isa = PBXGroup;
 			children = (
 				84D05B412C3400310054D791 /* Screens */,
-				84D05B442C3400900054D791 /* HomeCoordinator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -400,7 +404,6 @@
 			isa = PBXGroup;
 			children = (
 				84D05B402C34002C0054D791 /* Screens */,
-				84D05B462C3400A40054D791 /* ChatCoordinator.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -409,7 +412,6 @@
 			isa = PBXGroup;
 			children = (
 				84D05B3F2C3400270054D791 /* Screens */,
-				84D05B482C3400B50054D791 /* ProfileCoordinator.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -418,7 +420,6 @@
 			isa = PBXGroup;
 			children = (
 				84D05B3E2C3400210054D791 /* Screens */,
-				84D05B4C2C3400D10054D791 /* SplashCoordinator.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -426,7 +427,14 @@
 		84D05B372C33FF550054D791 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				84D05B4A2C3400C70054D791 /* SettingsCoordinator.swift */,
+				841506A82C35347C0026E778 /* HomeCoordinator.swift */,
+				841506AA2C35361B0026E778 /* ChatCoordinator.swift */,
+				841506AB2C35361B0026E778 /* ProfileCoordinator.swift */,
+				84D05B4C2C3400D10054D791 /* SplashCoordinator.swift */,
 				84D05B222C33F9A50054D791 /* AppCoordinator.swift */,
+				84D05B4E2C3400DB0054D791 /* SearchCoordinator.swift */,
+				84D05B502C3400E30054D791 /* LoginCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -435,7 +443,6 @@
 			isa = PBXGroup;
 			children = (
 				84D05B3D2C3400180054D791 /* Screens */,
-				84D05B4A2C3400C70054D791 /* SettingsCoordinator.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -487,6 +494,7 @@
 		84D05B3F2C3400270054D791 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				841506B02C3551920026E778 /* ProfileScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -494,6 +502,7 @@
 		84D05B402C34002C0054D791 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				841506AE2C3551420026E778 /* ChatScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -699,13 +708,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D05B492C3400B50054D791 /* ProfileCoordinator.swift in Sources */,
+				841506AD2C35361B0026E778 /* ProfileCoordinator.swift in Sources */,
 				84D05B232C33F9A50054D791 /* AppCoordinator.swift in Sources */,
+				841506AC2C35361B0026E778 /* ChatCoordinator.swift in Sources */,
 				84D05B5B2C3402D50054D791 /* AIBotDetailScreen.swift in Sources */,
 				84D05B4F2C3400DB0054D791 /* SearchCoordinator.swift in Sources */,
+				841506A72C3520530026E778 /* Article.swift in Sources */,
+				841506A92C35347C0026E778 /* HomeCoordinator.swift in Sources */,
 				84D05B5D2C3402F80054D791 /* HomeViewModel.swift in Sources */,
 				84139B672C32900C00DBFD6F /* ContentView.swift in Sources */,
-				84D05B472C3400A40054D791 /* ChatCoordinator.swift in Sources */,
 				84D05B4B2C3400C70054D791 /* SettingsCoordinator.swift in Sources */,
 				84D05B642C3403B40054D791 /* UseCase.swift in Sources */,
 				84D05B592C3402C30054D791 /* PromptsDetailScreen.swift in Sources */,
@@ -715,8 +726,9 @@
 				84D05AD42C33AAD30054D791 /* PlaygroundCode.swift in Sources */,
 				84139B692C32900C00DBFD6F /* Item.swift in Sources */,
 				84139B652C32900C00DBFD6F /* MeowApp.swift in Sources */,
+				841506AF2C3551420026E778 /* ChatScreen.swift in Sources */,
+				841506B12C3551920026E778 /* ProfileScreen.swift in Sources */,
 				84D05B602C3403630054D791 /* ViewModel.swift in Sources */,
-				84D05B452C3400900054D791 /* HomeCoordinator.swift in Sources */,
 				84D05B4D2C3400D10054D791 /* SplashCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

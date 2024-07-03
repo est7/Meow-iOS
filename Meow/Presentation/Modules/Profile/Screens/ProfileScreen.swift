@@ -1,13 +1,13 @@
 //
-//  HomeScreen.swift
+//  ProfileScreen.swift
 //  Meow
 //
-//  Created by 李苹果 on 2024/7/2.
+//  Created by 李苹果 on 2024/7/3.
 //
 
 import SwiftUI
 
-struct HomeScreen: View {
+struct ProfileScreen: View {
     @ObservedObject var viewModel: AnyViewModel<HomePageState,HomePageInput>
 
     var body: some View {
@@ -17,5 +17,5 @@ struct HomeScreen: View {
 }
 
 #Preview {
-    HomeScreen(viewModel: AnyViewModel(HomeViewModel()))
+    ProfileScreen(viewModel: AnyViewModel(HomeViewModel()))
 }

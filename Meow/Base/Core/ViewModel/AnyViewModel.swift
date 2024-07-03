@@ -10,7 +10,6 @@ import Combine
 
 @dynamicMemberLookup
 final class AnyViewModel<State, Input>: ViewModel {
-
     private let wrappedObjectWillChange: () -> AnyPublisher<Void, Never>
     private var wrappedState: () -> State
     private let wrappedTrigger: (Input) -> Void
