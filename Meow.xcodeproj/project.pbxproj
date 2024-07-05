@@ -21,6 +21,9 @@
 		841506AD2C35361B0026E778 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506AB2C35361B0026E778 /* ProfileCoordinator.swift */; };
 		841506AF2C3551420026E778 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506AE2C3551420026E778 /* ChatScreen.swift */; };
 		841506B12C3551920026E778 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841506B02C3551920026E778 /* ProfileScreen.swift */; };
+		843906852C379D6C007BB597 /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843906842C379D6C007BB597 /* BottomNavigationBar.swift */; };
+		843906872C379D96007BB597 /* BottomNavigationTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843906862C379D96007BB597 /* BottomNavigationTabItem.swift */; };
+		843906892C379DB1007BB597 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843906882C379DB1007BB597 /* BlurView.swift */; };
 		84D05AD42C33AAD30054D791 /* PlaygroundCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D05AD32C33AAD30054D791 /* PlaygroundCode.swift */; };
 		84D05AE42C33D6680054D791 /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 84D05AE32C33D6680054D791 /* CombineExt */; };
 		84D05AE62C33D6680054D791 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 84D05AE52C33D6680054D791 /* Factory */; };
@@ -94,6 +97,9 @@
 		841506AB2C35361B0026E778 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		841506AE2C3551420026E778 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 		841506B02C3551920026E778 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		843906842C379D6C007BB597 /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
+		843906862C379D96007BB597 /* BottomNavigationTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationTabItem.swift; sourceTree = "<group>"; };
+		843906882C379DB1007BB597 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		84D05AD32C33AAD30054D791 /* PlaygroundCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundCode.swift; sourceTree = "<group>"; };
 		84D05B222C33F9A50054D791 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		84D05B4A2C3400C70054D791 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
@@ -372,6 +378,9 @@
 			children = (
 				84139B682C32900C00DBFD6F /* Item.swift */,
 				84139B662C32900C00DBFD6F /* ContentView.swift */,
+				843906842C379D6C007BB597 /* BottomNavigationBar.swift */,
+				843906862C379D96007BB597 /* BottomNavigationTabItem.swift */,
+				843906882C379DB1007BB597 /* BlurView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -711,13 +720,16 @@
 				841506AD2C35361B0026E778 /* ProfileCoordinator.swift in Sources */,
 				84D05B232C33F9A50054D791 /* AppCoordinator.swift in Sources */,
 				841506AC2C35361B0026E778 /* ChatCoordinator.swift in Sources */,
+				843906872C379D96007BB597 /* BottomNavigationTabItem.swift in Sources */,
 				84D05B5B2C3402D50054D791 /* AIBotDetailScreen.swift in Sources */,
 				84D05B4F2C3400DB0054D791 /* SearchCoordinator.swift in Sources */,
 				841506A72C3520530026E778 /* Article.swift in Sources */,
 				841506A92C35347C0026E778 /* HomeCoordinator.swift in Sources */,
 				84D05B5D2C3402F80054D791 /* HomeViewModel.swift in Sources */,
+				843906852C379D6C007BB597 /* BottomNavigationBar.swift in Sources */,
 				84139B672C32900C00DBFD6F /* ContentView.swift in Sources */,
 				84D05B4B2C3400C70054D791 /* SettingsCoordinator.swift in Sources */,
+				843906892C379DB1007BB597 /* BlurView.swift in Sources */,
 				84D05B642C3403B40054D791 /* UseCase.swift in Sources */,
 				84D05B592C3402C30054D791 /* PromptsDetailScreen.swift in Sources */,
 				84D05B532C34020F0054D791 /* HomeScreen.swift in Sources */,

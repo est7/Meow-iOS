@@ -9,13 +9,34 @@ import SwiftUI
 
 struct HomeScreen: View {
     @ObservedObject var viewModel: AnyViewModel<HomePageState,HomePageInput>
-
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    @State var selectedTab:Tab = .home
+    
+    init(viewModel: AnyViewModel<HomePageState, HomePageInput>) {
+        self.viewModel = viewModel
     }
-
+    
+    var body: some View {
+        ZStack {
+            Color.green.edgesIgnoringSafeArea(.all)
+            VStack {
+                Spacer()
+                Button(action: {
+                    // Action for Home Button
+                }) {
+                    Text("Home Button")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.red)
+                        .cornerRadius(10)
+                }
+                Spacer()
+            }
+        }
+    }
 }
 
+
+
 #Preview {
-    HomeScreen(viewModel: AnyViewModel(HomeViewModel()))
+    HomeScreen(viewModel:AnyViewModel(HomeViewModel()))
 }

@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct BottomNavigationBar: View {
+    @Binding var selectedTab: Tab
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            BottomNavigationTabItem(icon: "house", title: "Home", tab: .home, selectedTab: $selectedTab)
+            Spacer()
+            BottomNavigationTabItem(icon: "message", title: "Chat", tab: .chat, selectedTab: $selectedTab)
+            Spacer()
+            BottomNavigationTabItem(icon: "person", title: "Me", tab: .profile, selectedTab: $selectedTab)
+        }
+        .padding()
+        .background(
+            BlurView(style: .systemMaterial)
+                .clipShape(RoundedRectangle(cornerRadius: 30.0, style: .continuous))
+        )
+        .padding(.horizontal,60)
+        .padding(.bottom, 20)
+        .ignoresSafeArea()
     }
-}
-
-#Preview {
-    BottomNavigationBar()
 }

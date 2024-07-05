@@ -8,15 +8,28 @@
 import SwiftUI
 
 struct ChatScreen: View {
-    @ObservedObject var viewModel: AnyViewModel<HomePageState,HomePageInput>
+  @ObservedObject var viewModel: AnyViewModel<HomePageState, HomePageInput>
 
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  var body: some View {
+    ZStack {
+      Color.red.edgesIgnoringSafeArea(.all)
+      VStack {
+        Spacer()
+        Button(action: {
+          // Action for Home Button
+        }) {
+          Text("Chat Button")
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.black)
+            .cornerRadius(10)
+        }
+        Spacer()
+      }
     }
-
+  }
 }
 
 #Preview {
-    ChatScreen(viewModel: AnyViewModel(HomeViewModel()))
+  ChatScreen(viewModel: AnyViewModel(HomeViewModel()))
 }
-
