@@ -12,11 +12,11 @@ struct BottomNavigationBar: View {
     
     var body: some View {
         HStack {
-            BottomNavigationTabItem(icon: "house", title: "Home", tab: .home, selectedTab: $selectedTab)
+            BottomNavigationTabItem(icon: "Lotties/lotties_tab_item_explore", title: "Home", tab: .home, selectedTab: $selectedTab)
             Spacer()
-            BottomNavigationTabItem(icon: "message", title: "Chat", tab: .chat, selectedTab: $selectedTab)
+            BottomNavigationTabItem(icon: "Lotties/lotties_tab_item_chat", title: "Chat", tab: .chat, selectedTab: $selectedTab)
             Spacer()
-            BottomNavigationTabItem(icon: "person", title: "Me", tab: .profile, selectedTab: $selectedTab)
+            BottomNavigationTabItem(icon: "Lotties/lotties_tab_item_person", title: "Me", tab: .profile, selectedTab: $selectedTab)
         }
         .padding()
         .background(

@@ -12,7 +12,7 @@ struct ProfileScreen: View {
     @ObservedObject var viewModel: AnyViewModel<HomePageState,HomePageInput>
     @State private var pressCount = 0
     
-    let animationName = "Lotties/check_success"
+    let animationName = "Lotties/11"
     
     var title: String = "Heart Button"
     

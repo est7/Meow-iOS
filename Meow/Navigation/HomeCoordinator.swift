@@ -15,8 +15,8 @@ final class HomeCoordinator: NavigationCoordinatable {
     @Root
     var home = makeHomePage
     
-    //    @Route(.push)
-    //    var detail = makeHomePagePromptDetail
+        // @Route(.push)
+        // var detail = makeHomePagePromptDetail
     
 }
 
@@ -25,8 +25,8 @@ extension HomeCoordinator {
         HomeScreen(viewModel: AnyViewModel(HomeViewModel()))
     }
     
-    //    func makeHomePagePromptDetail(_ article: Article) -> PromptDetailScreen {
-    //        PromptDetailScreen(viewModel: AnyViewModel(PromptsDetailViewModel(article: article)))
-    //    }
+        // func makeHomePagePromptDetail(_ article: Article) -> PromptDetailScreen {
+            // PromptDetailScreen(viewModel: AnyViewModel(PromptsDetailViewModel(article: article)))
+        // }
 }
 

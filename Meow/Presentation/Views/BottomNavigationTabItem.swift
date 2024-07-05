@@ -5,44 +5,53 @@
 //  Created by 李苹果 on 2024/7/5.
 //
 
+import Lottie
 import SwiftUI
 
 struct BottomNavigationTabItem: View {
-    var icon: String
-    var title: String
-    var tab: Tab
-    @Binding var selectedTab: Tab
-    
-    var body: some View {
-        Button(action: {
-            withAnimation{
-                selectedTab = tab
-            }
-        }) {
-            VStack {
-                Image(systemName: icon)
-                    .font(.system(size: 24))
-                    .scaleEffect(tab == selectedTab ? 1.25 : 1.0)
-                    .foregroundColor(tab == selectedTab ? .white : .gray)
-                    .onTapGesture {
-                        withAnimation(.easeInOut(duration: 0.1)) {
-                            selectedTab = tab
-                        }
-                    }
-                // if selectedTab == tab {
-                //     Text(title)
-                //         .font(.system(size: 12))
-                //         .foregroundColor(tab == selectedTab ? .white : .gray)
-                //         .padding(.top,4)
-                //         .transition(.opacity)
-                // }
-                
-            }
-            .padding(.horizontal,10)
-            .padding(.vertical,5)
-            .foregroundColor(selectedTab == tab ? .blue : .gray)
+  var icon: String
+  var title: String
+  var tab: Tab
+  @Binding var selectedTab: Tab
+  @State private var isOn: Bool = false
+
+  var body: some View {
+    VStack {
+        LottieSwitch(animation: .named(icon))
+        .isOn($isOn)
+        .onAnimation(
+          fromProgress: 0,
+          toProgress: 1
+        )
+        .offAnimation(
+          fromProgress: 1,
+          toProgress: 1
+        )
+        .frame(width: 30, height: 30)
+        .onTapGesture {
+          withAnimation(.easeInOut(duration: 0.1)) {
+            selectedTab = tab
+          }
+          updateLottieState()
         }
+
+      Text(title)
+        .foregroundColor(selectedTab == tab ? .black: .gray)
+        .font(.system(size: 10))
     }
+    .onChange(of: selectedTab) {
+      updateLottieState()
+    }
+    .onAppear {
+      if selectedTab == tab {
+        updateLottieState()
+      }
+    }
+  }
+
+  private func updateLottieState() {
+    isOn = (selectedTab == tab)
+  }
 }
 
 //#Preview {
