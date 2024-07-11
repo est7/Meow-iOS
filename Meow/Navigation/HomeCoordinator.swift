@@ -11,22 +11,21 @@ import SwiftUI
 
 final class HomeCoordinator: NavigationCoordinatable {
     let stack = Stinsen.NavigationStack<HomeCoordinator>(initial: \HomeCoordinator.home)
-    
+
     @Root
     var home = makeHomePage
-    
-        // @Route(.push)
-        // var detail = makeHomePagePromptDetail
-    
+
+    // @Route(.push)
+    // var detail = makeHomePagePromptDetail
+
 }
 
 extension HomeCoordinator {
-    func makeHomePage()->HomeScreen {
+    func makeHomePage() -> HomeScreen {
         HomeScreen(viewModel: AnyViewModel(HomeViewModel()))
     }
-    
-        // func makeHomePagePromptDetail(_ article: Article) -> PromptDetailScreen {
-            // PromptDetailScreen(viewModel: AnyViewModel(PromptsDetailViewModel(article: article)))
-        // }
-}
 
+    // func makeHomePagePromptDetail(_ article: Article) -> PromptDetailScreen {
+    // PromptDetailScreen(viewModel: AnyViewModel(PromptsDetailViewModel(article: article)))
+    // }
+}

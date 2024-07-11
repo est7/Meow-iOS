@@ -71,3 +71,24 @@ func main(){
     let nameKeyPath = \Person.name
     print(person[keyPath: nameKeyPath]) // 输出: Alice
 }
+
+
+actor BankAccount {
+    var balance: Double = 0.0
+    
+    func deposit(amount: Double) {
+        balance += amount
+    }
+    
+    func withdraw(amount: Double) -> Bool {
+        if balance >= amount {
+            balance -= amount
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+let account = BankAccount()
+

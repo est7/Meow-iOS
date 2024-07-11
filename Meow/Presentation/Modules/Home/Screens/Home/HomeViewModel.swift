@@ -28,6 +28,10 @@ class HomeViewModel: ViewModel {
     @Published
     var state: HomePageState = HomePageState.init()
     
+    @Published
+    var countNum:Int = 0
+    
+    
     let fetchDataStream = PassthroughRelay<Void>()
     private var cancellables = Set<AnyCancellable>()
     
